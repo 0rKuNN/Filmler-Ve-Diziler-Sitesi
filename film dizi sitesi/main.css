@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+ }
+
+ body {
+    background-image: url(./resim/jok.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+ }
+
+ .content{
+    position: relative;
+    background-color: lightgray;
+    width: 70%;
+    max-width: 700px;
+    margin: 5% auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    left: 15%;
+    padding: 20px;
+ }
+
+ .content h2{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.content p {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.content h3 {
+   margin-bottom: 40px;
+   text-align: center;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 17%;
+    left: 68%;
+}
+
+.social-media div{
+    display: inline-flex;
+    margin: 0 6px;
+}
+
+.social-media div a{
+    display: inline-flex;
+    width: 45px;
+    height: 45px;
+    background: #2c3e50;
+    font-size: 25px;
+    color: #fff;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.social-media .facebook a:hover{
+    background: #4267B2;
+}
+
+.social-media a i{
+    transition: 0.5s all;
+}
+
+.social-media a:hover > i{
+    transform: scale(1.6) rotate(360deg) ;
+}
+
+.social-media .twitter a:hover{
+    background: #1da1f2;
+}
+
+.social-media .instagram a:hover{
+    background: #7315c6;
+}
+
+.social-media .google a:hover{
+    background: #d34c3d;
+}
+
+@media only screen and (max-width: 700px){
+    
+   .content {
+        width: 90%;
+        margin: 10% auto; 
+        align-items: center;
+ }
+
+  .social-media {
+    position: static;
+    margin-top: 20px;
+    text-align: center;
+ }
+}
